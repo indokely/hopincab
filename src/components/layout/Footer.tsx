@@ -45,7 +45,7 @@ export default function Footer() {
               <li><Link href="/services" className="hover:text-white">Airport Transfers</Link></li>
               <li><Link href="/services" className="hover:text-white">Tours</Link></li>
               <li><Link href="/services" className="hover:text-white">Cab & Vans</Link></li>
-              <li><Link href="/services/hourly-hire" className="hover:text-white">Hourly Hire</Link></li>
+              <li><Link href="/services" className="hover:text-white">Hourly Hire</Link></li>
             </ul>
           </div>
           <div id="contact">
@@ -53,15 +53,15 @@ export default function Footer() {
             <address className="not-italic">
               <div className="flex items-start mb-2">
                 <MapPinIcon className="h-5 w-5 text-blue-400 mr-2 mt-1 flex-shrink-0" />
-                <span>123 Auckland Street, Auckland 1010, New Zealand</span>
+                <span>47 garton drive, Massey, Auckland, 0614</span>
               </div>
               <div className="flex items-center mb-2">
                 <PhoneIcon className="h-5 w-5 text-blue-400 mr-2 flex-shrink-0" />
-                <a href="tel:+64211234567" className="hover:text-white">+64 21 123 4567</a>
+                <a href="tel:+64212458155" className="hover:text-white">+64 21 245 8155</a>
               </div>
               <div className="flex items-center">
                 <EnvelopeIcon className="h-5 w-5 text-blue-400 mr-2 flex-shrink-0" />
-                <a href="mailto:info@hopincab.com" className="hover:text-white">info@hopincab.com</a>
+                <a href="mailto:Resv@hopincab.com" className="hover:text-white">Resv@hopincab.com</a>
               </div>
             </address>
           </div>
