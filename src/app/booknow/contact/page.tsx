@@ -6,11 +6,7 @@ export const metadata = {
   description: 'Enter your contact details to complete your Auckland cab booking.'
 };
 
-interface Props {
-  searchParams?: { [key: string]: string | string[] };
-}
-
-export default function ContactDetails({ searchParams }: Props) {
+export default function ContactDetails({ searchParams }: { searchParams?: { [key: string]: string | string[] } }) {
   // Guard: ensure all previous steps are present
   if (!searchParams || !searchParams.pickupDate || !searchParams.pickupTime || !searchParams.pickupLocation || !searchParams.dropoffLocation || !searchParams.vehicle) {
     return notFound();
@@ -30,7 +26,7 @@ export default function ContactDetails({ searchParams }: Props) {
           <form action="/booknow/confirmation" method="POST" className="space-y-6">
             {/* Pass all previous fields as hidden */}
             {Object.entries(searchParams).map(([key, value]) => (
-              <input key={key} type="hidden" name={key} value={value} />
+              <input key={key} type="hidden" name={key} value={value as string} />
             ))}
             <div className="flex gap-4">
               <div className="flex-1">
