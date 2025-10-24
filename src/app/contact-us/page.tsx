@@ -14,7 +14,7 @@ export default function ContactUs() {
         <h1 className="text-4xl md:text-5xl font-extrabold mb-2 tracking-tight">Contact Us</h1>
       </section> */}
 
-      {/* CONTACT INFO & FORM */}
+      {/* CONTACT INFO & FORM - Rajkumar */}
       <section className="py-16 bg-black text-white">
         <div className="container mx-auto px-4 max-w-xl">
           {/* Contact Info */}
