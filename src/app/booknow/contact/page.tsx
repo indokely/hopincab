@@ -6,7 +6,11 @@ export const metadata = {
   description: 'Enter your contact details to complete your Auckland cab booking.'
 };
 
-export default function ContactDetails({ searchParams }: { searchParams?: Record<string, string | string[]> }) {
+interface Props {
+  searchParams?: { [key: string]: string | string[] };
+}
+
+export default function ContactDetails({ searchParams }: Props) {
   // Guard: ensure all previous steps are present
   if (!searchParams || !searchParams.pickupDate || !searchParams.pickupTime || !searchParams.pickupLocation || !searchParams.dropoffLocation || !searchParams.vehicle) {
     return notFound();
