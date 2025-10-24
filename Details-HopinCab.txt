@@ -1,0 +1,12 @@
+Booking with Payment gateway
+1. Normal - per km price
+2. boost - price - based on time - % increment
+
+
+
+We will Do this later - Once HopinCab will be shifted.
+What you need in - Day Tour
+1. Number of People
+2. Hire Guide
+3. Then Calcuate the price - Then payment gateway
+
