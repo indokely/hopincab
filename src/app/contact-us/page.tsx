@@ -38,7 +38,7 @@ export default function ContactUs() {
           </div>
 
           {/* Contact Form */}
-          <form className="space-y-6">
+          {/* <form className="space-y-6">
             <div>
               <label htmlFor="name" className="block font-medium mb-1 text-gray-200">Name</label>
               <input id="name" name="name" type="text" required className="w-full bg-black border border-gray-700 rounded-lg px-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:border-orange-500" />
@@ -70,7 +70,7 @@ export default function ContactUs() {
               <textarea id="message" name="message" rows={4} required className="w-full bg-black border border-gray-700 rounded-lg px-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:border-orange-500" />
             </div>
             <button type="submit" className="w-full bg-orange-500 text-white py-3 rounded-lg font-bold hover:bg-orange-600 transition-colors">Send Message</button>
-          </form>
+          </form> */}
         </div>
       </section>
     </PageLayout>

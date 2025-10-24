@@ -99,7 +99,25 @@ export default function Home() {
       </section>
 
       {/* BOOK NOW INLINE FORM */}
-      <BookNowInlineForm />
+      {/* <BookNowInlineForm /> */}
+      <section className="py-16 bg-gray-900">
+        <div className="container mx-auto px-4 max-w-xl">
+          <div className="rounded-xl p-8 mb-10 w-full text-center">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">Book Your Ride</h2>
+            <p className="text-gray-400 mb-6">For instant bookings or queries, contact:</p>
+            <div className="flex flex-col gap-3 items-center">
+              <a href="tel:+64212458155" className="flex items-center gap-2 text-lg font-semibold text-orange-500 hover:underline">
+                <PhoneIcon className="h-5 w-5 text-orange-500" />
+                +64 21 245 8155
+              </a>
+              <a href="mailto:Resv@hopincab.com" className="flex items-center gap-2 text-lg font-semibold text-orange-500 hover:underline">
+                <EnvelopeIcon className="h-5 w-5 text-orange-500" />
+                Resv@hopincab.com
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* SERVICES OVERVIEW */}
       <section className="py-16 bg-black">
