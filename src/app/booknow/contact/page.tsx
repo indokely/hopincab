@@ -6,9 +6,9 @@ export const metadata = {
   description: 'Enter your contact details to complete your Auckland cab booking.'
 };
 
-export default function ContactDetails({ searchParams }: { searchParams: Record<string, string> }) {
+export default function ContactDetails({ searchParams }: { searchParams?: Record<string, string | string[]> }) {
   // Guard: ensure all previous steps are present
-  if (!searchParams.pickupDate || !searchParams.pickupTime || !searchParams.pickupLocation || !searchParams.dropoffLocation || !searchParams.vehicle) {
+  if (!searchParams || !searchParams.pickupDate || !searchParams.pickupTime || !searchParams.pickupLocation || !searchParams.dropoffLocation || !searchParams.vehicle) {
     return notFound();
   }
 
