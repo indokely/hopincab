@@ -27,8 +27,9 @@ const vehicles = [
   },
 ];
 
-export default function SelectVehicle({ searchParams }: { searchParams: Record<string, string> }) {
-  if (!searchParams.pickupDate || !searchParams.pickupTime || !searchParams.pickupLocation || !searchParams.dropoffLocation) {
+export default async function SelectVehicle({ searchParams }: { searchParams?: Promise<{ [key: string]: string | string[] }> }) {
+  const resolvedSearchParams = searchParams ? await searchParams : {};
+  if (!resolvedSearchParams.pickupDate || !resolvedSearchParams.pickupTime || !resolvedSearchParams.pickupLocation || !resolvedSearchParams.dropoffLocation) {
     return notFound();
   }
 
@@ -38,13 +39,13 @@ export default function SelectVehicle({ searchParams }: { searchParams: Record<s
         <div className="container mx-auto px-4 max-w-xl">
           <h1 className="text-3xl font-bold mb-8">Select Your Vehicle</h1>
           <div className="bg-gray-900 rounded-lg p-4 mb-6 text-sm text-gray-300">
-            <div><span className="font-semibold text-white">Pickup:</span> {searchParams.pickupLocation} ({searchParams.pickupDate} {searchParams.pickupTime})</div>
-            <div><span className="font-semibold text-white">Drop Off:</span> {searchParams.dropoffLocation}</div>
-            <div><span className="font-semibold text-white">Type:</span> {searchParams.transferType === 'return' ? 'Return' : 'One Way'}</div>
+            <div><span className="font-semibold text-white">Pickup:</span> {resolvedSearchParams.pickupLocation} ({resolvedSearchParams.pickupDate} {resolvedSearchParams.pickupTime})</div>
+            <div><span className="font-semibold text-white">Drop Off:</span> {resolvedSearchParams.dropoffLocation}</div>
+            <div><span className="font-semibold text-white">Type:</span> {resolvedSearchParams.transferType === 'return' ? 'Return' : 'One Way'}</div>
           </div>
           <form action="/booknow/contact" method="GET" className="space-y-6">
-            {Object.entries(searchParams).map(([key, value]) => (
-              <input key={key} type="hidden" name={key} value={value} />
+            {Object.entries(resolvedSearchParams).map(([key, value]) => (
+              <input key={key} type="hidden" name={key} value={value as string} />
             ))}
             <div className="grid gap-6">
               {vehicles.map(v => (
