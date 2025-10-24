@@ -21,7 +21,7 @@ export default function ContactUs() {
           <div className="mb-10 space-y-4 text-center">
             <div className="flex items-center justify-center">
               <MapPinIcon className="h-6 w-6 text-orange-500 mr-2" />
-              <span className="text-gray-300">47 Garton Drive, Massey, Auckland, 0614</span>
+              <span className="text-gray-300">47 Garton Drive, Massey, Auckland, 0614 </span>
             </div>
             <div className="flex items-center justify-center">
               <PhoneIcon className="h-6 w-6 text-orange-500 mr-2" />

@@ -6,9 +6,10 @@ export const metadata = {
   description: 'Enter your contact details to complete your Auckland cab booking.'
 };
 
-export default function ContactDetails({ searchParams }: { searchParams?: { [key: string]: string | string[] } }) {
+export default async function ContactDetails({ searchParams }: { searchParams?: Promise<{ [key: string]: string | string[] }> }) {
+  const resolvedSearchParams = searchParams ? await searchParams : {};
   // Guard: ensure all previous steps are present
-  if (!searchParams || !searchParams.pickupDate || !searchParams.pickupTime || !searchParams.pickupLocation || !searchParams.dropoffLocation || !searchParams.vehicle) {
+  if (!resolvedSearchParams || !resolvedSearchParams.pickupDate || !resolvedSearchParams.pickupTime || !resolvedSearchParams.pickupLocation || !resolvedSearchParams.dropoffLocation || !resolvedSearchParams.vehicle) {
     return notFound();
   }
 
@@ -18,14 +19,14 @@ export default function ContactDetails({ searchParams }: { searchParams?: { [key
         <div className="container mx-auto px-4 max-w-xl">
           <h1 className="text-3xl font-bold mb-8">Contact Details</h1>
           <div className="bg-gray-900 rounded-lg p-4 mb-6 text-sm text-gray-300">
-            <div><span className="font-semibold text-white">Pickup:</span> {searchParams.pickupLocation} ({searchParams.pickupDate} {searchParams.pickupTime})</div>
-            <div><span className="font-semibold text-white">Drop Off:</span> {searchParams.dropoffLocation}</div>
-            <div><span className="font-semibold text-white">Type:</span> {searchParams.transferType === 'return' ? 'Return' : 'One Way'}</div>
-            <div><span className="font-semibold text-white">Vehicle:</span> {searchParams.vehicle}</div>
+            <div><span className="font-semibold text-white">Pickup:</span> {resolvedSearchParams.pickupLocation} ({resolvedSearchParams.pickupDate} {resolvedSearchParams.pickupTime})</div>
+            <div><span className="font-semibold text-white">Drop Off:</span> {resolvedSearchParams.dropoffLocation}</div>
+            <div><span className="font-semibold text-white">Type:</span> {resolvedSearchParams.transferType === 'return' ? 'Return' : 'One Way'}</div>
+            <div><span className="font-semibold text-white">Vehicle:</span> {resolvedSearchParams.vehicle}</div>
           </div>
           <form action="/booknow/confirmation" method="POST" className="space-y-6">
             {/* Pass all previous fields as hidden */}
-            {Object.entries(searchParams).map(([key, value]) => (
+            {Object.entries(resolvedSearchParams).map(([key, value]) => (
               <input key={key} type="hidden" name={key} value={value as string} />
             ))}
             <div className="flex gap-4">
