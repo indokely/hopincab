@@ -23,6 +23,7 @@
 # misc
 .DS_Store
 *.pem
+google-sheets-key.json
 
 # debug
 npm-debug.log*
