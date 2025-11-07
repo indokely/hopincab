@@ -1,5 +1,6 @@
 import PageLayout from '../../components/layout/PageLayout';
 import { MapPinIcon, PhoneIcon, EnvelopeIcon } from '@heroicons/react/24/outline';
+import ContactForm from './ContactForm';
 
 export const metadata = {
   title: 'Contact Us | HopInCab',
@@ -38,39 +39,7 @@ export default function ContactUs() {
           </div>
 
           {/* Contact Form */}
-          {/* <form className="space-y-6">
-            <div>
-              <label htmlFor="name" className="block font-medium mb-1 text-gray-200">Name</label>
-              <input id="name" name="name" type="text" required className="w-full bg-black border border-gray-700 rounded-lg px-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:border-orange-500" />
-            </div>
-            <div>
-              <label htmlFor="mobile" className="block font-medium mb-1 text-gray-200">Mobile Number</label>
-              <input id="mobile" name="mobile" type="tel" required className="w-full bg-black border border-gray-700 rounded-lg px-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:border-orange-500" placeholder="e.g. +64 21 245 8155" />
-            </div>
-            <div>
-              <label htmlFor="email" className="block font-medium mb-1 text-gray-200">Email</label>
-              <input id="email" name="email" type="email" required className="w-full bg-black border border-gray-700 rounded-lg px-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:border-orange-500" />
-            </div>
-            <div>
-              <label htmlFor="service" className="block font-medium mb-1 text-gray-200">Service</label>
-              <select id="service" name="service" required className="w-full bg-black border border-gray-700 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-orange-500">
-                <option value="">Select a service</option>
-                <option value="Tours">Tours</option>
-                <option value="Transfers">Transfers</option>
-                <option value="Cruise Ship Transfers">Cruise Ship Transfers</option>
-                <option value="MICE">MICE (Meetings, Incentives, Conferences, Exhibitions)</option>
-                <option value="Luxury Vehicle Hire">Luxury Vehicle Hire</option>
-                <option value="Weddings">Weddings</option>
-                <option value="Multilingual Driver Guides">Multilingual Driver Guides</option>
-                <option value="Hire a Car">Hire a Car</option>
-              </select>
-            </div>
-            <div>
-              <label htmlFor="message" className="block font-medium mb-1 text-gray-200">Message</label>
-              <textarea id="message" name="message" rows={4} required className="w-full bg-black border border-gray-700 rounded-lg px-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:border-orange-500" />
-            </div>
-            <button type="submit" className="w-full bg-orange-500 text-white py-3 rounded-lg font-bold hover:bg-orange-600 transition-colors">Send Message</button>
-          </form> */}
+          <ContactForm />
         </div>
       </section>
     </PageLayout>
