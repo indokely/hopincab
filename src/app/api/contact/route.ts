@@ -1,10 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { google } from 'googleapis';
-import path from 'path';
-import { promises as fs } from 'fs';
 
-// Path to your service account key (update if you put it elsewhere)
-const KEY_PATH = path.join(process.cwd(), 'google-sheets-key.json');
 // Your Google Sheet ID
 const SHEET_ID = '1wyJxoJRA1JrLgkKzyZRwJQQVU7Be1F1dwMWumtnSf5Y'; // <-- REPLACE THIS
 
@@ -13,9 +9,8 @@ export async function POST(req: NextRequest) {
     const body = await req.json();
     const { name, email, mobile, message } = body;
 
-    // Read credentials from file
-    const credentialsRaw = await fs.readFile(KEY_PATH, 'utf8');
-    const credentials = JSON.parse(credentialsRaw);
+    // Read credentials from environment variable
+    const credentials = JSON.parse(process.env.GOOGLE_SHEETS_KEY_JSON || '{}');
 
     // Authenticate with Google Sheets
     const auth = new google.auth.GoogleAuth({
