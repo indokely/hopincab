@@ -68,6 +68,7 @@ export default function Footer() {
         </div>
         <div className="border-t border-gray-800 mt-12 pt-8 text-center">
           <p className="text-xs text-gray-600">&copy; {new Date().getFullYear()} HopInCab. All rights reserved.</p>
+          <p className="text-xs text-gray-600 mt-1">Developed and maintained by <Link href="https://snaccmate.com" className="hover:underline" target="_blank" rel="noopener noreferrer">SnaccMate.com</Link></p>
         </div>
       </div>
     </footer>
