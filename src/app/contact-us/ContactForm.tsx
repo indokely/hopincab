@@ -109,7 +109,7 @@ export default function ContactForm() {
             value={form.message}
             onChange={handleChange}
             className="w-full bg-black border border-gray-700 rounded-lg px-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:border-orange-500"
-            placeholder="Type your message here..."
+            placeholder="Type your message here... you can also mention things like child car seat, flight details, or anything extra."
           />
         </div>
         <button
