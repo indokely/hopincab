@@ -1,14 +1,35 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { google } from 'googleapis';
+import { sendEmail } from '@/lib/email';
 
 // Your Google Sheet ID
 const SHEET_ID = '1wyJxoJRA1JrLgkKzyZRwJQQVU7Be1F1dwMWumtnSf5Y'; // <-- REPLACE THIS
+
+
+// Email where contact form submissions will be sent
+const RECIPIENT_EMAIL = process.env.CONTACT_FORM_RECIPIENT || 'rajkumar.mundel@gmail.com';
 
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
     const { name, email, mobile, message } = body;
 
+    // Send email notification
+    const emailHtml = `      
+      <p><strong>Name:</strong> ${name}</p>
+      <p><strong>Email:</strong> ${email}</p>
+      <p><strong>Mobile:</strong> ${mobile}</p>
+      <p><strong>Message:</strong></p>
+      <p>${message.replace(/\n/g, '<br>')}</p>
+    `;
+
+    await sendEmail({
+      to: RECIPIENT_EMAIL,
+      subject: `Message from ${name}`,
+      html: emailHtml,
+    });
+
+    // The rest of your Google Sheets code remains the same
     // --- FOR LOCAL DEVELOPMENT ONLY ---
     // import path from 'path';
     // import { promises as fs } from 'fs';
