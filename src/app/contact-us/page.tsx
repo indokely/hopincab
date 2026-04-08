@@ -3,8 +3,8 @@ import { MapPinIcon, PhoneIcon, EnvelopeIcon } from '@heroicons/react/24/outline
 import ContactForm from './ContactForm';
 
 export const metadata = {
-  title: 'Contact Us | HopInCab',
-  description: 'Contact HopInCab for bookings, questions, or feedback. Phone, email, and address for Auckland’s trusted cab service.'
+  title: 'Contact Us | HopinCab',
+  description: 'Contact HopinCab for bookings, questions, or feedback. Phone, email, and address for Auckland’s trusted cab service.'
 };
 
 export default function ContactUs() {

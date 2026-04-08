@@ -34,7 +34,7 @@ export const getBookingConfirmationEmail = ({
 
   const pickupDateFormatted = new Date(pickupDate).toLocaleDateString();
   const currentYear = new Date().getFullYear();
-  const companyName = process.env.COMPANY_NAME || 'HopInCab';
+  const companyName = process.env.COMPANY_NAME || 'HopinCab';
   const companyAddress = process.env.COMPANY_ADDRESS || '47 garton drive, Massey, Auckland, 0614, NZ';
 
   return `

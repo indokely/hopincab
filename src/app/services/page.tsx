@@ -4,14 +4,14 @@ import Link from 'next/link';
 import PageLayout from '../../components/layout/PageLayout';
 
 export const metadata = {
-  title: 'Services | HopInCab',
-  description: 'Explore HopInCab&apos;s full range of services: airport transfers, guided tours, cruise ship transfers, luxury vehicle hire, MICE, weddings, multilingual drivers, and car rentals in Auckland.'
+  title: 'Services | HopinCab',
+  description: 'Explore HopinCab&apos;s full range of services: airport transfers, guided tours, cruise ship transfers, luxury vehicle hire, MICE, weddings, multilingual drivers, and car rentals in Auckland.'
 };
 
 const services = [
   {
     title: 'Tours',
-    description: 'Discover Auckland&apos;s wonders with Hopincab&apos;s guided tours. Our friendly drivers offer insightful commentary, ensuring you experience the city&apos;s highlights and hidden gems comfortably and informatively.',
+    description: 'Discover Auckland&apos;s wonders with HopinCab&apos;s guided tours. Our friendly drivers offer insightful commentary, ensuring you experience the city&apos;s highlights and hidden gems comfortably and informatively.',
     icon: <MapPinIcon className="h-10 w-10 text-blue-600" />,
     price: 'From $99'
   },
@@ -23,37 +23,37 @@ const services = [
   },
   {
     title: 'Cruise Ship Transfers',
-    description: 'Ensure a smooth start and end to your cruise adventure with Hopincab&apos;s efficient cruise ship transfer services. Our drivers ensure timely pickups and drop-offs at Auckland&apos;s cruise terminals, allowing you to embark and disembark with ease.',
+    description: 'Ensure a smooth start and end to your cruise adventure with HopinCab&apos;s efficient cruise ship transfer services. Our drivers ensure timely pickups and drop-offs at Auckland&apos;s cruise terminals, allowing you to embark and disembark with ease.',
     icon: <UserGroupIcon className="h-10 w-10 text-blue-600" />,
     price: 'From $39'
   },
   {
     title: 'MICE (Meetings, Incentives, Conferences, Exhibitions) Services',
-    description: 'Trust Hopincab to facilitate your corporate event transportation needs in Auckland. From airport transfers for delegates to shuttle services between venues, we ensure seamless logistics for your MICE activities.',
+    description: 'Trust HopinCab to facilitate your corporate event transportation needs in Auckland. From airport transfers for delegates to shuttle services between venues, we ensure seamless logistics for your MICE activities.',
     icon: <ShieldCheckIcon className="h-10 w-10 text-blue-600" />,
     price: 'Enquire'
   },
   {
     title: 'Luxury Vehicle Hire',
-    description: 'Elevate your travel experience with Hopincab&apos;s luxury vehicle hire service in Auckland. Whether it&apos;s a special occasion or you simply prefer premium transportation, our fleet of upscale vehicles ensures comfort and style.',
+    description: 'Elevate your travel experience with HopinCab&apos;s luxury vehicle hire service in Auckland. Whether it&apos;s a special occasion or you simply prefer premium transportation, our fleet of upscale vehicles ensures comfort and style.',
     icon: <CalendarIcon className="h-10 w-10 text-blue-600" />,
     price: 'From $199'
   },
   {
     title: 'Weddings',
-    description: 'Make your wedding day unforgettable with Hopincab&apos;s wedding transportation services. Our reliable drivers and elegant vehicles cater to your every need, ensuring you arrive at your venue in style and on time.',
+    description: 'Make your wedding day unforgettable with HopinCab&apos;s wedding transportation services. Our reliable drivers and elegant vehicles cater to your every need, ensuring you arrive at your venue in style and on time.',
     icon: <CheckCircleIcon className="h-10 w-10 text-blue-600" />,
     price: 'Enquire'
   },
   {
     title: 'Multilingual Driver Guides',
-    description: 'Experience personalized service with Hopincab&apos;s multilingual driver guides. Whether you speak English, Spanish, Mandarin, or another language, our drivers ensure clear communication and enhanced experiences for all travelers.',
+    description: 'Experience personalized service with HopinCab&apos;s multilingual driver guides. Whether you speak English, Spanish, Mandarin, or another language, our drivers ensure clear communication and enhanced experiences for all travelers.',
     icon: <PhoneIcon className="h-10 w-10 text-blue-600" />,
     price: 'Enquire'
   },
   {
     title: 'Hire a Car',
-    description: 'Looking for convenient transportation? Choose Hopincab&apos;s car rental service. With a simple booking process and a variety of vehicle options, renting a car with us is easy and hassle-free. Enjoy the freedom to explore Auckland and beyond at your own pace.',
+    description: 'Looking for convenient transportation? Choose HopinCab&apos;s car rental service. With a simple booking process and a variety of vehicle options, renting a car with us is easy and hassle-free. Enjoy the freedom to explore Auckland and beyond at your own pace.',
     icon: <MapPinIcon className="h-10 w-10 text-blue-600" />,
     price: 'From $69 Per Day'
   }

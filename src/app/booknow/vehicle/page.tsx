@@ -2,7 +2,7 @@ import PageLayout from '../../../components/layout/PageLayout';
 import { notFound } from 'next/navigation';
 
 export const metadata = {
-  title: 'Select Vehicle | Book a Cab | HopInCab',
+  title: 'Select Vehicle | Book a Cab | HopinCab',
   description: 'Choose your vehicle for your Auckland ride or airport transfer.'
 };
 

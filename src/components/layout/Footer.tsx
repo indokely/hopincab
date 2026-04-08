@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-extrabold text-white mb-4 tracking-tight">HopInCab</h3>
+            <h3 className="text-xl font-extrabold text-white mb-4 tracking-tight">HopinCab</h3>
             <p className="mb-4">Your reliable transportation partner in Auckland. Safe, comfortable, and professional service.</p>
             <div className="flex space-x-4">
               <a href="https://www.facebook.com/people/HOP-in-CAB/61550752243172/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
@@ -35,6 +35,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li><Link href="/" className="hover:text-white">Home</Link></li>
               <li><Link href="/services" className="hover:text-white">Services</Link></li>
+              <li><Link href="/private-transfers" className="hover:text-white">Private Transfers</Link></li>
               <li><Link href="/about-us" className="hover:text-white">About Us</Link></li>
               <li><Link href="/contact-us" className="hover:text-white">Contact</Link></li>
             </ul>
@@ -67,7 +68,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-gray-800 mt-12 pt-8 text-center">
-          <p className="text-xs text-gray-600">&copy; {new Date().getFullYear()} HopInCab. All rights reserved.</p>
+          <p className="text-xs text-gray-600">&copy; {new Date().getFullYear()} HopinCab. All rights reserved.</p>
           <p className="text-xs text-gray-600 mt-1">Developed and maintained by <Link href="https://snaccmate.com" className="hover:underline" target="_blank" rel="noopener noreferrer">SnaccMate.com</Link></p>
         </div>
       </div>

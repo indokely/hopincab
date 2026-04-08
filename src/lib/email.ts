@@ -29,7 +29,7 @@ export async function sendEmail({ to, subject, html }: EmailOptions) {
 
   // Send mail with defined transport object
   const info = await transporter.sendMail({
-    from: process.env.SMTP_FROM || '\"HopInCab\" <noreply@hopincab.com>',
+    from: process.env.SMTP_FROM || '\"HopinCab\" <noreply@hopincab.com>',
     to,
     subject,
     html,

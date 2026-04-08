@@ -59,7 +59,7 @@ export default function Home() {
       <section className="relative flex flex-col items-center justify-center min-h-[70vh] bg-black text-white text-center px-4 pt-24 pb-16">
         <h1 className="text-4xl md:text-6xl font-extrabold mb-6 drop-shadow-lg">Auckland Airport Transfers<br className="hidden md:inline" /> & City Rides, 24/7</h1>
         <p className="text-xl md:text-2xl max-w-2xl mx-auto mb-8 font-medium opacity-90">
-          Hopincab makes getting to and from Auckland Airport fast, reliable, and affordable. Book a cab, van, or tour in seconds.
+          HopinCab makes getting to and from Auckland Airport fast, reliable, and affordable. Book a cab, van, or tour in seconds.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link href="/booknow" className="bg-white text-black font-bold px-8 py-4 rounded-lg text-lg shadow hover:bg-gray-100 transition">Book a Cab</Link>
@@ -146,7 +146,7 @@ export default function Home() {
       {/* WHY CHOOSE US */}
       <section className="py-16 bg-gray-900">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center text-white">Why Choose Hopincab?</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center text-white">Why Choose HopinCab?</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div>
               <h4 className="font-semibold mb-2 text-orange-500">Door 2 Door Service at the Price of Shuttle</h4>
@@ -166,7 +166,7 @@ export default function Home() {
             </div>
             <div>
               <h4 className="font-semibold mb-2 text-orange-500">Versatility</h4>
-              <p className="text-gray-400">Solo, family, or group—Hopincab adapts to your journey.</p>
+              <p className="text-gray-400">Solo, family, or group—HopinCab adapts to your journey.</p>
             </div>
             <div>
               <h4 className="font-semibold mb-2 text-orange-500">Safety</h4>
@@ -179,8 +179,8 @@ export default function Home() {
       {/* SHORT ABOUT */}
       <section className="py-12 bg-gray-800">
         <div className="container mx-auto px-4 max-w-3xl text-center">
-          <h2 className="text-2xl font-bold mb-2 text-white">About Hopincab</h2>
-          <p className="text-lg text-gray-400 mb-4">Hopincab is Auckland&apos;s trusted airport transfer and tour provider. We deliver safe, reliable, and affordable rides—24/7, anywhere in the city.</p>
+          <h2 className="text-2xl font-bold mb-2 text-white">About HopinCab</h2>
+          <p className="text-lg text-gray-400 mb-4">HopinCab is Auckland&apos;s trusted airport transfer and tour provider. We deliver safe, reliable, and affordable rides—24/7, anywhere in the city.</p>
           <Link href="/about-us" className="text-orange-500 font-semibold underline hover:text-orange-600">Learn more about us →</Link>
         </div>
       </section>

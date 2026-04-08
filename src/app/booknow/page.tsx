@@ -1,8 +1,8 @@
 import PageLayout from '../../components/layout/PageLayout';
 
 export const metadata = {
-  title: 'Book a Cab | HopInCab',
-  description: 'Book your next ride or airport transfer with HopInCab. Fast, easy, and reliable cab booking in Auckland.'
+  title: 'Book a Cab | HopinCab',
+  description: 'Book your next ride or airport transfer with HopinCab. Fast, easy, and reliable cab booking in Auckland.'
 };
 
 import BookNowForm from './BookNowForm';
