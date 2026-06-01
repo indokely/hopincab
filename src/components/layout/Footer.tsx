@@ -36,6 +36,8 @@ export default function Footer() {
               <li><Link href="/" className="hover:text-white">Home</Link></li>
               <li><Link href="/services" className="hover:text-white">Services</Link></li>
               <li><Link href="/private-transfers" className="hover:text-white">Private Transfers</Link></li>
+              <li><Link href="/free-child-car-seat" className="hover:text-white">Free Child Seat</Link></li>
+              <li><Link href="/blog" className="hover:text-white">Blog</Link></li>
               <li><Link href="/about-us" className="hover:text-white">About Us</Link></li>
               <li><Link href="/contact-us" className="hover:text-white">Contact</Link></li>
             </ul>

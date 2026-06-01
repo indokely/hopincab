@@ -1,4 +1,5 @@
 import PageLayout from '@/components/layout/PageLayout';
+import FaqAccordion from '@/components/common/FaqAccordion';
 
 export const metadata = {
   title: 'Private Transfers | HopinCab',
@@ -54,9 +55,45 @@ const paymentOptions = [
   '5% fee applies to international cards',
 ];
 
+const faqs = [
+  {
+    question: "Does HopinCab provide a child car seat?",
+    answer: "Yes — a certified child car seat is included FREE with every HopinCab booking in New Zealand — no request needed."
+  },
+  {
+    question: "Do I need to request a child seat in advance?",
+    answer: "No. Every HopinCab vehicle is pre-equipped with an approved child car seat as standard on all bookings."
+  },
+  {
+    question: "What age children does the child seat cover?",
+    answer: "Our seats cover infants through to children under 7, in line with New Zealand law."
+  },
+  {
+    question: "Is it legal to travel without a child seat in a taxi in New Zealand?",
+    answer: "Under New Zealand law, all children under 7 must use an approved child restraint in any vehicle, including taxis and private hire vehicles. HopinCab includes a certified seat automatically."
+  }
+];
+
 export default function PrivateTransfersPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   return (
     <PageLayout>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <section className="border-b border-gray-800 bg-black px-4 pb-14 pt-24 text-white">
         <div className="container mx-auto max-w-5xl">
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.24em] text-orange-500">
@@ -179,6 +216,16 @@ export default function PrivateTransfersPage() {
               </ul>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="bg-black px-4 py-16 text-white border-t border-gray-900">
+        <div className="container mx-auto max-w-3xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold md:text-4xl">Frequently Asked Questions</h2>
+            <p className="mt-4 text-gray-400">Common questions about child safety regulations, pricing, and bookings in New Zealand.</p>
+          </div>
+          <FaqAccordion items={faqs} />
         </div>
       </section>
 
