@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-xl font-extrabold text-white mb-4 tracking-tight">HopinCab</h3>
-            <p className="mb-4">Your reliable transportation partner in Auckland. Safe, comfortable, and professional service.</p>
+            <p className="mb-4">Your reliable transportation partner in New Zealand. Safe, comfortable, and professional service.</p>
             <div className="flex space-x-4">
               <a href="https://www.facebook.com/people/HOP-in-CAB/61550752243172/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
                 <span className="sr-only">Facebook</span>

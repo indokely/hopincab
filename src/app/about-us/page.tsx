@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export const metadata = {
   title: 'About Us | HopinCab',
-  description: 'Learn more about HopinCab, Auckland’s trusted cab and tour provider. Discover our mission, values, and commitment to customer satisfaction.'
+  description: 'Learn more about HopinCab, New Zealand’s trusted cab and tour provider. Discover our mission, values, and commitment to customer satisfaction.'
 };
 
 export default function AboutUs() {
@@ -12,7 +12,7 @@ export default function AboutUs() {
       {/* HERO */}
       <section className="relative flex flex-col items-center justify-center min-h-[40vh] bg-black text-white text-center px-4 pt-24 pb-10 border-b border-gray-800">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">About HopinCab</h1>
-        <p className="text-xl md:text-2xl max-w-2xl mx-auto mb-6 text-gray-300">Auckland’s trusted airport transfer and tour provider. Reliable, safe, and affordable rides—24/7.</p>
+        <p className="text-xl md:text-2xl max-w-2xl mx-auto mb-6 text-gray-300">New Zealand’s trusted airport transfer and tour provider. Reliable, safe, and affordable rides—24/7.</p>
         <div className="flex gap-6 mt-4 justify-center">
           <a href="https://www.kayak.com.au/Auckland.2575.guide" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-gray-900 hover:bg-gray-800 px-5 py-2 rounded-lg shadow transition border border-gray-700">
             <img src="/images/kayak-logo.png" alt="Kayak" className="h-7" />

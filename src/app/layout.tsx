@@ -11,14 +11,14 @@ const inter = Inter({
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: 'HopinCab | Premium Airport Transfers & Tours in Auckland',
-  description: 'Your reliable partner for comfortable and affordable airport transfers, tours, and transportation services in Auckland. Book your ride now!',
-  keywords: 'Auckland airport transfer, taxi service, airport shuttle, private tours, reliable transportation',
+  title: 'HopinCab | Premium Airport Transfers & Tours in New Zealand',
+  description: 'Your reliable partner for comfortable and affordable airport transfers, tours, and transportation services in New Zealand. Book your ride now!',
+  keywords: 'New Zealand airport transfer, taxi service, airport shuttle, private tours, reliable transportation',
   viewport: 'width=device-width, initial-scale=1',
   themeColor: '#2563eb',
   openGraph: {
     title: 'HopinCab | Premium Airport Transfers & Tours',
-    description: 'Your reliable partner for comfortable and affordable transportation in Auckland',
+    description: 'Your reliable partner for comfortable and affordable transportation in New Zealand',
     url: 'https://hopincab.com',
     siteName: 'HopinCab',
     locale: 'en_NZ',

@@ -5,37 +5,37 @@ import PageLayout from '../../components/layout/PageLayout';
 
 export const metadata = {
   title: 'Services | HopinCab',
-  description: 'Explore HopinCab&apos;s full range of services: airport transfers, guided tours, cruise ship transfers, luxury vehicle hire, MICE, weddings, multilingual drivers, and car rentals in Auckland.'
+  description: 'Explore HopinCab&apos;s full range of services: airport transfers, guided tours, cruise ship transfers, luxury vehicle hire, MICE, weddings, multilingual drivers, and car rentals in New Zealand.'
 };
 
 const services = [
   {
     title: 'Tours',
-    description: 'Discover Auckland&apos;s wonders with HopinCab&apos;s guided tours. Our friendly drivers offer insightful commentary, ensuring you experience the city&apos;s highlights and hidden gems comfortably and informatively.',
+    description: 'Discover New Zealand&apos;s wonders with HopinCab&apos;s guided tours. Our friendly drivers offer insightful commentary, ensuring you experience the city&apos;s highlights and hidden gems comfortably and informatively.',
     icon: <MapPinIcon className="h-10 w-10 text-blue-600" />,
     price: 'From $99'
   },
   {
     title: 'Transfers',
-    description: 'Seamlessly transition from Auckland Airport to your destination with our reliable transfer services. Our prompt and courteous drivers guarantee a stress-free journey, whether you&apos;re heading to a hotel, business meeting, or tourist attraction.',
+    description: 'Seamlessly transition from New Zealand airports to your destination with our reliable transfer services. Our prompt and courteous drivers guarantee a stress-free journey, whether you&apos;re heading to a hotel, business meeting, or tourist attraction.',
     icon: <ClockIcon className="h-10 w-10 text-blue-600" />,
     price: 'From $70'
   },
   {
     title: 'Cruise Ship Transfers',
-    description: 'Ensure a smooth start and end to your cruise adventure with HopinCab&apos;s efficient cruise ship transfer services. Our drivers ensure timely pickups and drop-offs at Auckland&apos;s cruise terminals, allowing you to embark and disembark with ease.',
+    description: 'Ensure a smooth start and end to your cruise adventure with HopinCab&apos;s efficient cruise ship transfer services. Our drivers ensure timely pickups and drop-offs at New Zealand&apos;s cruise terminals, allowing you to embark and disembark with ease.',
     icon: <UserGroupIcon className="h-10 w-10 text-blue-600" />,
     price: 'From $39'
   },
   {
     title: 'MICE (Meetings, Incentives, Conferences, Exhibitions) Services',
-    description: 'Trust HopinCab to facilitate your corporate event transportation needs in Auckland. From airport transfers for delegates to shuttle services between venues, we ensure seamless logistics for your MICE activities.',
+    description: 'Trust HopinCab to facilitate your corporate event transportation needs in New Zealand. From airport transfers for delegates to shuttle services between venues, we ensure seamless logistics for your MICE activities.',
     icon: <ShieldCheckIcon className="h-10 w-10 text-blue-600" />,
     price: 'Enquire'
   },
   {
     title: 'Luxury Vehicle Hire',
-    description: 'Elevate your travel experience with HopinCab&apos;s luxury vehicle hire service in Auckland. Whether it&apos;s a special occasion or you simply prefer premium transportation, our fleet of upscale vehicles ensures comfort and style.',
+    description: 'Elevate your travel experience with HopinCab&apos;s luxury vehicle hire service in New Zealand. Whether it&apos;s a special occasion or you simply prefer premium transportation, our fleet of upscale vehicles ensures comfort and style.',
     icon: <CalendarIcon className="h-10 w-10 text-blue-600" />,
     price: 'From $199'
   },
@@ -53,7 +53,7 @@ const services = [
   },
   {
     title: 'Hire a Car',
-    description: 'Looking for convenient transportation? Choose HopinCab&apos;s car rental service. With a simple booking process and a variety of vehicle options, renting a car with us is easy and hassle-free. Enjoy the freedom to explore Auckland and beyond at your own pace.',
+    description: 'Looking for convenient transportation? Choose HopinCab&apos;s car rental service. With a simple booking process and a variety of vehicle options, renting a car with us is easy and hassle-free. Enjoy the freedom to explore New Zealand and beyond at your own pace.',
     icon: <MapPinIcon className="h-10 w-10 text-blue-600" />,
     price: 'From $69 Per Day'
   }

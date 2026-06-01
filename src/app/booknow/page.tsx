@@ -2,7 +2,7 @@ import PageLayout from '../../components/layout/PageLayout';
 
 export const metadata = {
   title: 'Book a Cab | HopinCab',
-  description: 'Book your next ride or airport transfer with HopinCab. Fast, easy, and reliable cab booking in Auckland.'
+  description: 'Book your next ride or airport transfer with HopinCab. Fast, easy, and reliable cab booking in New Zealand.'
 };
 
 import BookNowForm from './BookNowForm';
@@ -12,7 +12,10 @@ export default function BookNow() {
     <PageLayout>
       <section className="py-12 bg-black text-white min-h-screen">
         <div className="container mx-auto px-4 max-w-xl">
-          <h1 className="text-3xl font-bold mb-8">Book a Cab</h1>
+          <h1 className="text-3xl font-bold mb-2">Book a Cab</h1>
+          <div className="mb-6 bg-orange-500/10 border border-orange-500/30 px-4 py-2 rounded-lg text-sm font-semibold text-orange-400 inline-flex items-center gap-2">
+            <span>👶 We offer free child seat service for every booking</span>
+          </div>
           <BookNowForm />
           <div className="flex items-center my-8">
             <div className="flex-grow border-t border-gray-700"></div>

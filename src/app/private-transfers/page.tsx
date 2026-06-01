@@ -3,7 +3,7 @@ import PageLayout from '@/components/layout/PageLayout';
 export const metadata = {
   title: 'Private Transfers | HopinCab',
   description:
-    'Private Auckland transfers with zone-based pricing, family-friendly vehicles, and door-to-door service from HopinCab.',
+    'Private New Zealand transfers with zone-based pricing, family-friendly vehicles, and door-to-door service from HopinCab.',
 };
 
 const transferZones = [
@@ -63,11 +63,11 @@ export default function PrivateTransfersPage() {
             Private Transfers
           </p>
           <h1 className="max-w-4xl text-4xl font-extrabold tracking-tight md:text-6xl">
-            Auckland Transfers
+            New Zealand Transfers
             <span className="block text-3xl md:text-5xl">(0-170 km)</span>
           </h1>
           <p className="mt-4 text-lg text-gray-300">
-            Reliable, door-to-door, luggage-friendly, and family-focused private transfers across Auckland
+            Reliable, door-to-door, luggage-friendly, and family-focused private transfers across New Zealand
             and beyond.
           </p>
         </div>
